@@ -676,10 +676,22 @@ html, body {
             width: 18px !important;
             height: 18px !important;
         }
+ @media (max-height: 768px){
+		.clouds-foreground{bottom:-2OOpx;}
+            .clouds-foreground .cloud:nth-child(1) { width: 240px;top:90;}
+            .clouds-foreground .cloud:nth-child(2) { width: 200px; bottom:0px;}
+            .clouds-foreground .cloud:nth-child(3) { width: 170px; bottom:0px;}
+		.clouds .cloud:nth-child(1) {width:500px }
+		.clouds .cloud:nth-child(2) {width:450px }
+		.clouds .cloud:nth-child(3) {width:350px }
+		.clouds .cloud:nth-child(4) {width:460px }
+}
+
 
         @media (max-width: 768px) and (pointer: coarse) {
-            .clouds-foreground .cloud:nth-child(1) { width: 240px; }
-            .clouds-foreground .cloud:nth-child(2) { width: 200px; }
+		.clouds-foreground{bottom:-2OOpx;}
+            .clouds-foreground .cloud:nth-child(1) { width: 0px; }
+            .clouds-foreground .cloud:nth-child(2) { width: 0px; }
             .clouds-foreground .cloud:nth-child(3) { width: 170px; }
 		.clouds .cloud:nth-child(1) {width:500px }
 		.clouds .cloud:nth-child(2) {width:450px }
